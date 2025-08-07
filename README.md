@@ -18,8 +18,6 @@ shot & spot is a web-based photo analysis tool that allows users to upload image
 The following technologies must be installed on your system:
 
 - Node.js and npm
-
-
 - Python 3.9+
 - Java 17+ (Java 11 is also acceptable)
 - Maven
@@ -29,7 +27,6 @@ The following technologies must be installed on your system:
 ## 🖥️ Installation and Running Steps
 
 ### 1. Frontend (React)
-
 ```bash
 cd jwt-frontend
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass  # For Windows PowerShell permissions
@@ -38,12 +35,14 @@ npm start    # Start the application
 
 
 ### 3. Backend (Spring Boot)
+```bash
 cd jwtbackend
 mvn clean install       # Run this if it's your first time building
 mvn spring-boot:run     # Start the backend API
 
 
 ### 4. Python Backend (YOLO + FastAPI)
+```bash
 cd python-backend
 pip install -r requirements.txt
 uvicorn app:app --reload --port 8000
