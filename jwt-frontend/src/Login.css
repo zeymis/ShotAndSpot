@@ -1,0 +1,130 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.login-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-box {
+  padding: 40px 30px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 450px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.login-title {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 25px;
+  font-family: "Arbutus Slab", serif;
+  color: #FFE3BB;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.fade-out {
+  opacity: 1;
+  animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}
+
+.login-label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #FFE3BB;
+}
+
+.login-input {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 3px solid black;
+  margin-bottom: 16px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+  background-color: #FFE3BB;
+  font-family: 'Arbutus Slab', serif;
+  font-weight: bold;
+}
+
+.login-input:focus {
+  border-color: #FF4F0F;
+  background-color: #FFE3BB;
+  outline: none;
+}
+
+.login-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.button-style {
+  width: 160px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 20px;
+  font-family: "Arbutus Slab", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  background: #FFE3BB;
+  color: black;
+  box-shadow: 5px 4px 1px rgba(0, 0, 0, 0.9);
+  transition: all 0.3s ease;
+  border: 3px solid black;
+}
+
+.button-style:hover {
+  transform: scale(1.05);
+  background: #FF4F0F;
+}
+
+.button-submit {
+  background: #FFE3BB;
+  color: black;
+}
+
+.button-submit:hover {
+  background: #FF4F0F;
+}

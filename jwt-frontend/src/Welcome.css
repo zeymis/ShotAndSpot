@@ -1,0 +1,123 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.welcome-container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('./assets/pattern.png');
+  background-size: 200px;
+  background-repeat: repeat;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40vh;
+}
+
+.welcome-title {
+  color: #FFE3BB;
+  -webkit-text-stroke: 1px black;
+  text-align: center;
+  font-weight: 100;
+  font-size: 4vw;
+  font-family: "Arbutus Slab", sans-serif;
+  letter-spacing: 5px;
+  margin-top: 10vh;
+  text-shadow: 0.2vw 0.2vw 1px rgba(0, 0, 0, 0.9);
+  opacity: 1; /* Başlangıçta gizli */
+  transition: opacity 1s ease-in-out;
+}
+
+.logo-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1); /* Başlangıç konumu: tam ortada */
+  transition: all 1s ease-in-out;
+   font-size: 10vw;
+  font-family: "Gochi Hand", sans-serif;
+  color: #FFA673;
+  -webkit-text-stroke: 1px black;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 7px;
+  white-space: nowrap;
+  min-width: max-content;
+  padding: 12px 40px;
+  opacity: 1;
+}
+
+
+.welcome-button {
+  width: 160px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 20px;
+  font-family: "Arbutus Slab", sans-serif;
+  background: #FFE3BB; 
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  box-shadow: 5px 4px 1px rgba(0, 0, 0, 0.9);
+  transition: all 0.3s ease;
+  margin-bottom: 10vh;
+  border: 3px solid black;
+  
+}
+
+.welcome-button:hover {
+  transform: scale(1.05);
+  background: #FF4F0F
+}
+
+.welcome-title.fade-out {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.welcome-title.fade-in {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.logo-text.fade-in {
+  opacity: 1;
+  transition: all 1s ease-in-out;
+}
+
+.slide-up {
+  transform: translate(-50%, -5vh) scale(0.5); /* Yukarı kay ve küçül */
+  top: 10px;
+}
+
+.slide-down {
+  transform: translate(-50%, -50%) scale(1); /* Ortada ve büyük */
+}
+
+.button-container {
+  opacity: 1; /* Başlangıçta görünür */
+  transform: translateY(0); /* Normal pozisyon */
+}
+
+.hidden {
+  opacity: 0;
+}
+
